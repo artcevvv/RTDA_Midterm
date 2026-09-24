@@ -1,0 +1,7 @@
+WINDOW_SIZE = 20
+STREAM_INTERVAL = 1.0
+STORAGE = "stream_processed_storage.csv"
+
+SAFE_TEMP_MIN = 2.0
+SAFE_TEMP_MAX = 8.0
+Z_SCORE_THRESHOLD = 2.5
