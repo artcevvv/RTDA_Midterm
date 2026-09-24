@@ -28,10 +28,10 @@ with st.sidebar:
 
     col_start, col_stop = st.columns(2)
     with col_start:
-        if st.button("Start", use_container_width=True):
+        if st.button("Start", width="stretch"):
             st.session_state.is_running = True
     with col_stop:
-        if st.button("Stop", use_container_width=True):
+        if st.button("Stop", width="stretch"):
             st.session_state.is_running = False
 
     refresh_interval = st.slider(
@@ -111,7 +111,7 @@ def render_dashboard():
         ]
         st.dataframe(
             df[display_cols].tail(10).iloc[::-1],
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
